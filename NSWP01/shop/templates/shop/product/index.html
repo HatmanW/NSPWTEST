@@ -1,0 +1,74 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>
+
+    <h1>Home</h1>
+    <img src="https://i.pinimg.com/564x/81/2f/fd/812ffda1b7401b52ecd12e894b3edb2e.jpg" height="300" width="300" class="logo">
+    <h3>Brands</h3>
+    <div class="row">
+        <a href="/nike/">
+            <img src="https://1000logos.net/wp-content/uploads/2021/11/Nike-Logo-768x432.png" height="100" width="100">
+        </a>
+        <a href="/adidas/">
+            <img src="https://1000logos.net/wp-content/uploads/2016/10/Adidas-logo-1024x681.png" height="100" width="100">
+        </a>
+        <a href="/converse/">
+            <img src="https://1000logos.net/wp-content/uploads/2019/12/Chuck-Taylor-All-Star-Logo.png" height="100" width="100">
+        </a>
+        <a href="/jordan/">
+            <img src="https://1000logos.net/wp-content/uploads/2021/05/Air-Jordan-Jumpman-logo-768x432.png" height="100" width="100">
+        </a>
+        <a href="/vans/">
+            <img src="https://1000logos.net/wp-content/uploads/2017/06/Vans-logo-1024x576.png" height="100" width="100">
+        </a>
+    </div>
+    <br>
+    <div class="container">
+        <h4 class="text-sm-left">Leave A Comment</h4>
+    </div>
+        <div class="col-md-3">
+            <form>
+                <fieldset class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </fieldset>
+                <fieldset class="form-group">
+                    <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                </fieldset>
+                <fieldset class="form-group text-xs-left">
+                    <button type="button" class="btn btn-secondary-outline btn-md">Send</button>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+    <div>
+        Copyright 2023
+    </div>
+    </footer>
+
+
+<!-- credits: https://www.codeply.com/p/EJd6H4Ejyi -->
+{% endblock %}

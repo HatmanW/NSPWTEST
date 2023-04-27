@@ -1,0 +1,25 @@
+{% extends "shop/base.html" %}
+{% block content %}
+  <h1>Product List</h1>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% if product_list %}
+        <table class="table table-bordered">
+            {% for product in product_list %}
+                <ul class="table-secondary">
+                    <li>
+                        <a href="{{ product.get_absolute_url }}">{{ product.name }}</a> ({{product.category}})
+                    </li>
+                </ul>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>There are no products in the store.</p>
+    {% endif %}
+{% endblock %}
